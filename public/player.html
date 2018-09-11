@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juan Galeas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="https://content.jwplatform.com/libraries/eJkyYmEh.js"></script>
+
+</head>
+<body style="background-color: #252830">
+<h4 class="display-4 text-bold text-light">Rojas System</h4>
+<div id="myElement">Loading the player ...</div>
+<script type="text/javascript">
+    jwplayer("myElement").setup({
+        height: 360,
+        listbar: {
+            position: 'right',
+            size: 320
+        },
+        width: 960,
+        playlist: [{
+            file: "rtmp://192.168.20.243/live/stream",
+            title: "Test Trailer 1"
+        }]
+    });
+</script>
+</body>
+</html>
